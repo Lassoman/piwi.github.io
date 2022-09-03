@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color : #957147;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #957147;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #957147;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.menu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+    z-index: 8;
+
+}
+.menu ul li {
+    color : #957147;
+    padding: 30px;
+    display: inline-block;
+    font-size: 15px;
+
+}
+.logo{
+    width: 150px;
+    padding-left: 40px;
+}
+
+.banner{
+
+    background-image: url("../images/lobbyhotel.jpeg");
+    color: #957147;
+    height: 100vh;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.bannerchambre{
+    background-image: url("../images/chambre.jpg");
+    color: #957147;
+    height: 100vh;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+
+}
+.bannerrestaurant{
+    background-image: url("../images/banniere\ restaurant.jpg");
+    color: #957147;
+    height: 100vh;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+
+}
+
+.bannerspa{
+    background-image: url("../images/bannierespa.jpg");
+    color: #957147;
+    height: 100vh;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+.bannerhotel{
+    background-image: url("../images/facade\ hotel.jpeg");
+    color: #957147;
+    height: 100vh;
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+    
+    
+
+
+.typo{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+}
+
+.titre{
+    font-size: 40px;
+}
+.titrecontact{
+    font-size: 50px;
+}
+
+.textbox{
+    background-color: rgba(250, 235, 215, 0.664);
+    display: flex;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    margin-top: 200px;
+    padding: 60px;
+    
+}
+.textboxHOTEL{
+    background-color: rgba(250, 235, 215, 0);
+    display: flex;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin-top: 60px;
+    padding: 40px;
+
+}
+
+.presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: antiquewhite;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+
+.boximg{
+    width: 40%;
+    padding: 20px;
+    
+    
+    
+}
+
+.boximg1{
+    width: 40%;
+    border: #957147 solid 2px;
+}
+.boxtexte{
+    width: 40%;
+    padding-left: 40px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #957147;
+}
+
+.button{
+    color: antiquewhite;
+    background-color:#957147;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    border-color:antiquewhite;
+}
+
+.trio{
+    background-color: #957147;
+    display: flex;   
+    text-align: center;
+    color: rgba(250, 235, 215, 0.932);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    justify-content: space-between;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.imgtrio{
+    width: 100%;
+    padding: 15px;
+    transition: transform 0.5s;
+    
+    
+    
+}
+.imgtrio:hover{
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(2); 
+    transform: scale(1.5);
+    }
+
+.texttrio{
+    
+    z-index: 10;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 10px;
+    
+    
+    
+    
+}
+
+.trioeffet{
+    overflow: hidden;
+}
+
+.carte{
+    display: block;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+    padding-left:40px;
+    color: #957147;
+    background: #95714770;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+}
+
+.logofooter{
+    width: 100px;
+}
+
+.finfooter{
+    background-color: antiquewhite;
+    color: #957147;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.textserre{
+    line-height: 30px;
+}
+
+form {
+    background-color: antiquewhite;
+    /* Uniquement centrer le formulaire sur la page */
+    margin: 0 auto;
+    width: 560px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 30px;
+    border: 1px solid rgb(170, 115, 70);
+    border-radius: 3px;
+  }
+  
+  form div + div {
+    margin-top: 2em;
+  }
+  
+  label {
+    /* Pour être sûrs que toutes les étiquettes ont même taille et sont correctement alignées */
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: rgb(170, 115, 70);
+  }
+  
+  input, textarea {
+    /* Pour s'assurer que tous les champs texte ont la même police.
+       Par défaut, les textarea ont une police monospace */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+  
+    /* Pour que tous les champs texte aient la même dimension */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Pour harmoniser le look & feel des bordures des champs texte */
+    border: 1px solid rgb(170, 115, 70);
+    
+  }
+  
+  input:focus, textarea:focus {
+    /* Pour souligner légèrement les éléments actifs */
+    border-color: rgb(170, 115, 70);
+  }
+  
+  textarea {
+    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    vertical-align: top;
+    /* Pour donner assez de place pour écrire du texte */
+    height: 12em;
+  }
+  
+  .buttonform {
+   border-radius: 1px ;
+   border: 1px solid antiquewhite;
+   background-color: rgb(170, 115, 70);
+   color: antiquewhite;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   padding: 10px;
+   margin-left: 200px;
+   
+  }
+
+  .menu-icon{
+      display: none;
+  }
+  #menuToggle{
+      display: none;
+  }
+
+  .btntop {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: antiquewhite;
+    border-radius: 20%;
+    padding: 15px;
+    margin: 5px;
+    width: 10%;
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+  }
+    
+    
+    
+  @media screen and (max-width: 768px) {
+
+    .logo{
+        margin-top: 5px;
+        padding-top: 5px;
+    }
+
+    .menu-icon {
+        width: 50px;
+        height: inherit;
+        display: block;
+        font-size : 1.7em;
+        color: rgb(170, 115, 70);
+        z-index: 9;
+        top: 20px;
+        padding-right: 20px;
+        
+    }
+  
+  #menuToggle:checked ~ ul{
+      max-height: 500px;
+  }
+
+  
+  .menu{
+      z-index: 40;
+      width: 100%;
+      height: auto
+
+  }
+  .menu ul{
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.6s;
+      margin-top: 10px;
+      width: 100%;
+
+  }
+
+  .menu ul li{
+      
+      display: block
+  }
+
+  .checkbox{
+      display: none;
+      
+  }
+
+.banner .bannerchambre .bannerrestaurant .bannerspa .bannerhotel{
+    
+    background-position: center center;
+    height: 100vh
+
+}
+
+.typo{
+    font-size: 15px;
+}
+
+.titre{
+    font-size: 25px;
+}
+
+.textbox{
+    width: 100%; 
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.boximg{
+    width: 100%;
+    
+}
+.boxtexte{
+    width: 100%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.button{
+    font-size: 10px;
+    width: 20%;
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+.trio{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.footer{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-bottom: 10px;
+    
+    
+
+}
+.logofooter{
+    display: flex;
+    justify-content: left;
+    width: 20%;
+}
+.rsfooter{
+    width: 30%;
+}
+.listfooter{
+    width: 30%;
+}
+
+.btntop{
+    display: flex;
+    font-size:10px;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    
+}
+.boximg1{
+    width: 100%;
+    padding: 20px;
+    border: none;
+}
+.boxtexte{
+    display: flex;
+    display: block;
+    
+}
+.titrecontact{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+form{
+    width:100%;
+}
+}
+
+
+
+
+      
